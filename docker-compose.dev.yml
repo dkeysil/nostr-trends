@@ -1,0 +1,8 @@
+version: '3.6'
+
+services:
+  nostr-trends:
+    ports:
+      - 8000:8000
+    environment:
+      - TRENDS_HTTP_PORT=8000

@@ -1,0 +1,9 @@
+version: '3.6'
+
+services:
+  nostr-trends:
+    build: .
+    restart: always
+    env_file: .env
+    volumes:
+      - ./index-folder:/usr/src/app/index-folder
